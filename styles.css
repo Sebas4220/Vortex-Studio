@@ -1,0 +1,82 @@
+/* Colores personalizados */
+:root {
+    --primary-color: #6c33da;
+    --accent-color: #fed70d;
+    --white-color: #ffffff;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--dark-color);
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    padding: 8rem 0;
+    margin-bottom: 2rem;
+}
+
+/* Servicios */
+.service-card {
+    transition: transform 0.3s ease;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card i {
+    color: var(--primary-color);
+}
+
+/* Botones */
+.btn-primary {
+    background-color: var(--secondary-color);
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 30px;
+}
+
+.btn-primary:hover {
+    background-color: #ff5252;
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 4rem 0;
+    }
+    
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+} 
+
+.pricing-card {
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+}
+
+.pricing-card .card-header {
+    border-radius: 10px 10px 0 0;
+}
+
+.badge {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+} 
